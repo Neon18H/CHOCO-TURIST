@@ -65,7 +65,7 @@ header a{
     line-height: 1.3em;
 }
 .carousel .list .item .topic{
-    color: green;
+    color: #f1683a;
 }
 .carousel .list .item .buttons{
     display: grid;
@@ -236,7 +236,7 @@ header a{
     z-index: 1000;
     width: 0%;
     height: 3px;
-    background-color: green;
+    background-color: #f1683a;
     left: 0;
     top: 0;
 }
