@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+  <ttle></ttle>
+ </head>
+   
+   <body>
+    
+    <h1 style ='color:blue;'>UCC- Nomina</h1>
+    <p>
+      {% if request.session.auth %} 
+      Bienvenido: {{ request.session.auth.nombre }}...
+      <a href="{% url 'logout' %}">Cerrar Sesion</a>
+      {% else %}
+        no hay sesion....
+      {% endif %}
+    </p>
+    <p>Menu</p>
+    <ul>
+        <li><a href="{% url 'index' %}">Inicio</a></li>
+        <li><a href="{% url 'ver_programas' %}">Programas</a></li>
+        <li><a href="{% url 'ver_empleados' %}">Empleados</a></li>
+        <li><a href="{% url 'formulario1' %}">Formulario</a></li>
+
+   </body>
+
+
+</html>
